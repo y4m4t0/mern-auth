@@ -91,4 +91,7 @@ class Register extends Component {
     }
 }
 
-export default Register;
+export default connect(
+    mapStateToProps,
+    { registerUser }
+)(withRouter(Register));
